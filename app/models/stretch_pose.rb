@@ -1,0 +1,2 @@
+class StretchPose < ApplicationRecord
+end

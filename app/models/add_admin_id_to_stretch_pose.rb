@@ -1,0 +1,2 @@
+class AddAdminIdToStretchPose < ApplicationRecord
+end
