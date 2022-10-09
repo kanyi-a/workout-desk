@@ -7,7 +7,7 @@ export default function LoginForm () {
       const [errors, setErrors] = useState([]);
       const [isLoading, setIsLoading] = useState(false);  
 
-//fetch function
+//fetch function (post request)
 function handleSubmit(e) {
       e.preventDefault();
       setIsLoading(true);
