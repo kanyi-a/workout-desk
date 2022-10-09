@@ -17,5 +17,10 @@ user5 = User.create(username: 'Hain', password: 'banana')
 user6 = User.create(username: 'Ilolo', password: 'banana')
 user7 = User.create(username: 'Vivian', password: 'banana')
 user8 = User.create(username: 'Rodney', password: 'banana')
+user9 = User.create(username: 'Ethan', password: 'banana')
+user10 = User.create(username: 'Stella', password: 'banana')
+user11 = User.create(username: 'Irene', password: 'banana')
+user12 = User.create(username: 'Lucy', password: 'banana')
+user13 = User.create(username: 'Nina', password: 'banana')
 
 puts "✅ Done seeding!"
