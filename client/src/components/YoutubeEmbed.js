@@ -1,5 +1,6 @@
 
 import React from "react";
+
 const YoutubeEmbed = ({ videoData }) => (
   <div className="video-div">
     <div className="video-responsive">
