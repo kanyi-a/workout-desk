@@ -26,7 +26,7 @@ user13 = User.create(username: 'Nina', password: 'banana')
 
 puts "🧘🤸 Seeding stretch poses..."
 
-stretch1 = StretchPose.create(title: 'Triceps Stretch', image: 'https://images.healthshots.com/healthshots/en/uploads/2021/06/17094911/stretches-1.jpg', category:'beginner', description: 'One of the most popular upper-body stretches—loosens up the muscles on the back of your upper arm making it great to do after a long strenious day working on your desk', is_favoured: 'false')
+stretch1 = StretchPose.create(title: 'Triceps Stretch', image: 'https://images.healthshots.com/healthshots/en/uploads/2021/06/17094911/stretches-1.jpg', category:'beginner', description: 'One of the most popular upper-body stretches—loosens up the muscles on the back of your upper arm making it great to do after a long strenious day working on your desk', is_favoured: 'false', video: 'https://youtube.com/embed/hSaqjF0dMMg')
 
 
 puts "✍🏻🗒️ Seeding comments..."
