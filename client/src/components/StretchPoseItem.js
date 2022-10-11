@@ -10,7 +10,7 @@ export default function StretchPoseItem({ stretchPose, handleUpdateItem, handleF
   function handleClick(e) {
     e.preventDefault();
 
-    fetch(`http://localhost:4000/stretch_poses/${id}`, {
+    fetch(`/stretch_poses/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",

@@ -39,6 +39,7 @@ function Login({ onLogin }) {
   );
 }
 
+
 const Logo = styled.h1`
   font-family: "Cookie", cursive;
   color: black;
@@ -46,6 +47,7 @@ const Logo = styled.h1`
   font-size: 100px;
   margin: 8px 0 16px;
   text-align: center;
+
 `;
 
 const Wrapper = styled.section`
