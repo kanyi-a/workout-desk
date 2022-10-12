@@ -55,7 +55,7 @@ stretch2 = StretchPose.create(
       is_favoured: "true",
       video: "https://youtube.com/embed/mS4S6kos8MM"
 )
-strech3 = StretchPose.create(
+stretch3 = StretchPose.create(
       title: "Butterfly Stretch",
       image: "https://media.self.com/photos/5a305dc79bddcf5b219b2c67/master/w_960%2Cc_limit/2_27self.jpg",
       category: "Beginner",
@@ -66,14 +66,67 @@ If you're too tight to bend over, simply press your knees down.
 Hold this stretch for 30 seconds to 2 minutes.
       ",
       is_favoured: "true",
-      video: "https://youtube/embed/E3611YwA51E"
+      video: "https://youtube.com/embed/E3611YwA51E"
 
 )
+stretch4 = StretchPose.create(
+title: "Seated Shoulder Squeeze",
+image: "https://media.self.com/photos/5a305dbc2323e96043af7dad/master/w_1600%2Cc_limit/2_11self.jpg",
+category: "Beginner",
+description: " it relieves poor posture and releases tension in the upper back,
+Sit on the floor with your knees bent and feet flat on the floor.
+Clasp your hands behind your lower back.
+Straighten and extend your arms and squeeze your shoulder blades together.
+Do this for 3 seconds and then release. Repeat 5 to 10 times.
+Stretches chest, shoulders, upper back
+",
+is_favoured: "true",
+video: "https://youtube.com/embed/XbzY45Z5DE8"
 
 
+)
+stretch5 = StretchPose.create(
+      title: "Standing/seated  Hamstring Stretch",
+      image: "https://media.self.com/photos/5a305db96c2fc24013a0aa78/master/w_1600%2Cc_limit/2_1Self.jpg",
+      category: "Intermediate",
+      description: "Stretches neck, back, glutes, hamstrings, calves
+      Stand tall with your feet hip-width apart, knees slightly bent, arms by your sides.
+Exhale as you bend forward at the hips, lowering your head toward the floor while keeping your head, neck, and shoulders relaxed.
+Wrap your arms around backs of your legs and hold anywhere from 45 seconds to 2 minutes.
+Bend your knees and roll up when you're done
+      ",
+      is_favoured: "false",
+      video: "https://youtube.com/embed/1rscgJNW27g"
+      
+      )
+
+stretch6 = StretchPose.create(
+      title: "Frog Stretch",
+      image: "https://media.self.com/photos/5a305dc583ab3f54feacf750/master/w_1920%2Cc_limit/2_26self.jpg",
+      category: "intermediate",
+      description: "
+      Most of us sit and cross our legs, which can lead to tight hips and result in lower-back pain
+Start on all fours.
+Slide your knees wider than shoulder-width apart.
+Turn your toes out and rest the inner edges of your feet flat on the floor.
+Shift your hips back toward your heels.
+Move from your hands to your forearms to get a deeper stretch, if possible.
+Hold for for 30 seconds to 2 minutes.
+Stretches hips, inner thighs",
+      
+      is_favoured: "false",
+      video: "https://youtube.com/embed/bxO4MK8YDWE"
+)   
+
+
+
+      
 puts "✍🏻🗒️ Seeding comments..."
 
 comment1 = Comment.create(description: "This pose really helped me with my carpal tunnel", user_id: 2, stretch_pose_id: stretch1.id)
 comment2 = Comment.create(description: "This pose realy helped relieve the strain on my shoulders", user_id: 2, stretch_pose_id: stretch1.id)
+
+puts "Seeding profile..."
+profile1 = Profile.create(bio: "fitness-enthusiast", email: "kanyi@gmail.com", user_id: 1)
 
 puts "✅ Done seeding!"

@@ -3,9 +3,11 @@ Rails.application.routes.draw do
   resources :comments 
   resources :users, only: [:index]
   resources :stretch_poses, only: [:index, :show, :update]
+  resources :profiles, only: [:index, :show, :update]
   
   post "/signup", to: "users#create"
   get "/me", to: "users#show"
+
 
   post "/login", to: "sessions#create"
   delete "/logout", to: "sessions#destroy"

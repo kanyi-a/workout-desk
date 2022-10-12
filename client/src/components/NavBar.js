@@ -13,14 +13,38 @@ export default function Navbar({ user, setUser }) {
 
   return (
       <>
-         <div className="header-background">
+      
+         <div className="container-fluid">
             <div>
             <p className="welcome">Welcome, {user.username}!</p>
-            <button onClick={handleLogoutClick} className="logout-button">Logout</button>
-            </div>
-            <Link exact to="/comments" className="nav-button"> Stretchies </Link>
+
+            <Link exact to="/comments" className="nav-button"> Mantra </Link>
             <Link exact to="*" className="nav-button"> Home </Link>
+        
+        <Link>
+          <div class="dropdown">
+          <button class="dropbtn">
+            <img
+                  src="https://mdbootstrap.com/img/Photos/Avatars/img (31).jpg"
+                  class="rounded-circle"
+                  height="22"
+                  alt=""
+                  loading="lazy"
+                  />
+              </button>       
+             <div class="dropdown-content">
+              
+          <a href="#">My profile </a>
+          <a href="#" onClick={handleLogoutClick}>
+                Logout
+                </a>
         </div>
+      </div>
+      </Link>
+           
+      </div>
+      </div>
+    
     </>
   )
 }

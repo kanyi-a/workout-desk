@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import CommentBubble from './CommentBubble';
 
 
-
 export default function CommentList({ user }) {
 
     const [commentData, setCommentData] = useState([])
@@ -43,13 +42,13 @@ export default function CommentList({ user }) {
         });
         setCommentData(editedComments);
       }
-
+     
     function handleSubmit(e){
         e.preventDefault();
         const newCommentObj = {
             description: description,
             user_id: user.id,
-            yoga_pose_id: 1
+            stretch_pose_id: 1
         }
               fetch("/comments",{
                 method: 'POST',
@@ -62,8 +61,12 @@ export default function CommentList({ user }) {
               console.log(newCommentObj); 
       }
 
-      function handleShowComment(singleComment){
-        setShowComment(singleComment)
+      function handleShowComment(e){
+        setShowComment({
+          ...showComment,
+          [e.target.name]: e.target.value,
+
+        })
       }
     
       const commentList = [...commentData]

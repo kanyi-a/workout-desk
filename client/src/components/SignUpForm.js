@@ -8,6 +8,7 @@ import Input from "./styles/Input";
 function SignUpForm({ onLogin }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("");
   const [errors, setErrors] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -46,6 +47,17 @@ function SignUpForm({ onLogin }) {
           onChange={(e) => setUsername(e.target.value)}
         />
       </FormField>
+      <FormField>
+        <Label htmlFor="email"> Email</Label>
+        <Input
+          type="email"
+          id="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          autoComplete="current-email"
+        />
+      </FormField>
+
       <FormField>
         <Label htmlFor="password">Password</Label>
         <Input

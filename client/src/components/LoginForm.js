@@ -8,6 +8,7 @@ import Input from "./styles/Input";
 export default function LoginForm({ onLogin }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("");
   const [errors, setErrors] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -32,6 +33,8 @@ export default function LoginForm({ onLogin }) {
   }
 
   return (
+
+   
     <form onSubmit={handleSubmit}>
     <FormField>
         <Label htmlFor="username">Username</Label>
@@ -43,6 +46,19 @@ export default function LoginForm({ onLogin }) {
           onChange={(e) => setUsername(e.target.value)}
         />
       </FormField>
+      <FormField>
+        <Label htmlFor="email">Email</Label>
+        <Input
+          type="email"
+          id="email"
+          autoComplete="current-email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+      </FormField>
+
+
+
       <FormField>
         <Label htmlFor="password">Password</Label>
         <Input
@@ -64,5 +80,6 @@ export default function LoginForm({ onLogin }) {
         ))}
       </FormField>
     </form>
+  
   );
 }
