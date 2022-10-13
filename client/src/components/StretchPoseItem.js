@@ -34,7 +34,7 @@ export default function StretchPoseItem({ stretchPose, handleUpdateItem, handleF
         <h2 className="stretch-card-title">{title}</h2>
         <img src={image} className="stretchimage" alt="stretch pose"/>
         <h4 className="stretch-card-category">{category}</h4>
-        <p className="stretch-card-description">{summary}...</p>
+        <ul className="stretch-card-description">{summary}</ul>
       </div>
       <Link exact to="/video" onClick={handleItemClick} ><i class="gg-play-button-o"></i></Link>
     </div>

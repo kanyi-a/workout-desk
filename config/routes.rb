@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   resources :comments 
-  resources :users, only: [:index]
+  resources :users, only: [:index, :create, :show]
   resources :stretch_poses, only: [:index, :show, :update]
   resources :profiles, only: [:index, :show, :update]
   

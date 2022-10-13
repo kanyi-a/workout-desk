@@ -7,21 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-puts "👩👨 Seeding users..."
-
-user1 = User.create(username: 'Jen', password: 'apple')
-user2 = User.create(username: 'Shani', password: 'banana')
-user3 = User.create(username: 'Gehrig', password: 'banana')
-user4 = User.create(username: 'Ethan', password: 'banana')
-user5 = User.create(username: 'Hain', password: 'banana')
-user6 = User.create(username: 'Ilolo', password: 'banana')
-user7 = User.create(username: 'Vivian', password: 'banana')
-user8 = User.create(username: 'Rodney', password: 'banana')
-user9 = User.create(username: 'Ethan', password: 'banana')
-user10 = User.create(username: 'Stella', password: 'banana')
-user11 = User.create(username: 'Irene', password: 'banana')
-user12 = User.create(username: 'Lucy', password: 'banana')
-user13 = User.create(username: 'Nina', password: 'banana')
 
 
 puts "🧘🤸 Seeding stretch poses..."
@@ -30,12 +15,18 @@ stretch1 = StretchPose.create(
       title: 'Triceps Stretch', 
       image: 'https://media.self.com/photos/5a305dbce1ef6d3e6b8801c5/master/w_1920%2Cc_limit/2_10self.jpg', 
       category:'Beginner',
-      description: 'One of the most popular upper-body stretches—loosens up the muscles on the back of your upper arm making it great to do after a long strenious day working on your desk.Procedure:
-      Kneel, sit, or stand tall with feet hip-width apart, arms extended overhead.
-      Bend your right elbow and reach your right hand to touch the top middle of your back.
-      Reach your left hand overhead and grasp just below your right elbow.
-      Gently pull your right elbow down and toward your head.
-      Switch arms and repeat.
+      description: 'One of the most popular upper-body stretches—loosens up the muscles on the back of your upper arm making it great to do after a long strenious day working on your desk",
+      "Procedure:",
+
+      "Kneel, sit, or stand tall with feet hip-width apart, arms extended overhead"
+
+      "Bend your right elbow and reach your right hand to touch the top middle of your back"
+
+      "Reach your left hand overhead and grasp just below your right elbow"
+
+      "Gently pull your right elbow down and toward your head"
+
+      "Switch arms and repeat"
       ', 
       is_favoured: 'false', 
       video: "https://youtube.com/embed/hSaqjF0dMMg"
@@ -47,9 +38,13 @@ stretch2 = StretchPose.create(
       category: "Beginner",
       description: "Most people tend to forget to stretch the neck. But relieving tension in your neck can make a positive impact on the rest of your upper body, from your shoulders to your spine.
       How to do it:
+
      1.Stand with feet shoulder-width apart, or sit down with your back straight and chest lifted.
+
      2.Drop your left ear to your left shoulder.
+
      3.To deepen the stretch, gently press down on your head with your left hand.
+
      4.Hold for 30 seconds to 2 minutes.
       ",
       is_favoured: "true",

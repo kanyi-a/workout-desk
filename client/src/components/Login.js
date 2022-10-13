@@ -12,8 +12,8 @@ function Login({ onLogin }) {
   
   return (
 
-
-    <div className="login-form">
+    
+    <div className= "login-form">
     <Wrapper>
       <Logo>Desk-Fit</Logo>
       <h2 className="tagline"> <strong> Welcome!! </strong> <br/> Our handpicked collection of stretching  exercises and poses will help ease the strain on your body and help you focus more.</h2>
@@ -40,6 +40,8 @@ function Login({ onLogin }) {
       )}
     </Wrapper>
     </div>
+    
+    
   );
 }
 
