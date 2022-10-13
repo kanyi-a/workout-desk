@@ -29,6 +29,7 @@ export default function StretchPoseItem({ stretchPose, handleUpdateItem, handleF
   
 
   return (
+    
     <div className="stretch-pose-item">
       <div>
         <h2 className="stretch-card-title">{title}</h2>
@@ -38,5 +39,7 @@ export default function StretchPoseItem({ stretchPose, handleUpdateItem, handleF
       </div>
       <Link exact to="/video" onClick={handleItemClick} ><i class="gg-play-button-o"></i></Link>
     </div>
+   
+
   );
 }
