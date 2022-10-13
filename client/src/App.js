@@ -4,6 +4,7 @@ import Login from './components/Login';
 import Header from './components/Header';
 import { Route, Routes} from "react-router-dom";
 import MainContainer from './components/MainContainer';
+import Profile from './components/Profile';
 
 
 
@@ -69,6 +70,7 @@ if (!user) return <Login onLogin={setUser} />;
             handleFindVideoData={handleFindVideoData} 
             user={user}
             />}/>
+        <Route exact path="/profile" element={<Profile  user={user}/>} />
         </Routes>
       
     </div>

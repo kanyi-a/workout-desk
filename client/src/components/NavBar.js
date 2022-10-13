@@ -34,7 +34,9 @@ export default function Navbar({ user, setUser }) {
               </button>       
              <div class="dropdown-content">
               
-          <a href="#">My profile </a>
+             <Link to={"/profile"} className=" dropdown-item">
+                    <span>My Profile</span>
+                  </Link>
           <a href="#" onClick={handleLogoutClick}>
                 Logout
                 </a>
