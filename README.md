@@ -3,6 +3,17 @@
 
 ## By Angela W Kanyi
 
+### Screenshots
+![Screenshot from 2022-10-14 11-01-58](https://user-images.githubusercontent.com/106078081/195795538-3fdd7cad-4e37-4609-9261-c8fdf7803d3f.png)
+
+[Go Back to the top](#Desk-fit)
+![Screenshot from 2022-10-14 11-02-44](https://user-images.githubusercontent.com/106078081/195795785-a6a1e32d-a5d1-437f-8666-c729327722ba.png)
+
+[Go Back to the top](#Desk-fit)
+![Screenshot from 2022-10-14 11-02-30](https://user-images.githubusercontent.com/106078081/195795874-e1543956-14f5-4b89-a752-3d09c8eced00.png)
+
+[Go Back to the top](#Desk-fit)
+![Screenshot from 2022-10-14 11-08-37](https://user-images.githubusercontent.com/106078081/195796149-554e3e8d-9194-4ce1-bd44-bcfdf916e8a5.png)
 ## Table of Content
  - [Description](#description)
  - [Features](#features)
@@ -10,9 +21,11 @@
  - [Technology  Used](#technology-Used)
  - [Licence](#licence)
  - [Authors Info](#Authors-Info)
-
+[Go Back to the top](#Desk-fit)
  ## Description
  <p>This is a rails application  with a react frontend </p>
+ 
+ [Go Back to the top](#Desk-fit)
 
  ## Features
  This project features:
